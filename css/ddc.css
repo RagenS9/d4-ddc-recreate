@@ -1,13 +1,16 @@
 * {
     box-sizing: border-box;
 }
+
 img {
     width: 100%;
 }
-.navbar {
+
+/*.navbar {
     display: flex;
     flex-direction: row;
-}
+}*/
+
 .button-row {
     text-align: center; 
 }
