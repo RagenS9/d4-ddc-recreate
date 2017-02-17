@@ -6,10 +6,28 @@ img {
     width: 100%;
 }
 
-/*.navbar {
-    display: flex;
-    flex-direction: row;
-}*/
+.panel {
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+.panel-logo {
+    width: 150px;
+}
+
+
+
+.panel-body {
+    padding: 0px; 
+}
+
+.facebooklogo > img {
+    width: 20px;
+}
+
+.twitterlogo > img {
+    width: 30px;
+}
 
 .button-row {
     text-align: center; 
