@@ -4,4 +4,10 @@
 img {
     width: 100%;
 }
-
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+.button-row {
+    text-align: center; 
+}
