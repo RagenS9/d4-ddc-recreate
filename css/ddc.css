@@ -24,8 +24,8 @@ div.container-fluid {
 
 /*this came in all squishy, so I had to fix the height and the weight.*/
 .who img {
-    width: 180px;
-    height: 80px; 
+    width: 210px;
+    height: 75px; 
 }
 
 .what {
@@ -43,9 +43,17 @@ div.container-fluid {
 
 .navbar-default .navbar-nav>li>a {
     color: white;
-    text-size: 16px; 
+    font-size: 16px; 
     text-transform: uppercase;
 }
+
+.navbar-default .navbar-nav>li>a:visited {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: deeppink;
+} 
 
 img.facebooklogo {
     width: 12px;
@@ -65,9 +73,8 @@ nav.navbar.navbar-default {
 main {
     background-position: center center;
     background-image: url(../img/background2.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     text-align: center;
-    height: auto; 
 }
 
 .details {
@@ -82,8 +89,12 @@ main {
 
 /*played around with padding, margins, everything I could think of . . . HOW do you get those two details columns to sit side-by-side and be centered on the page like you have it? It will only look like yours when I make the screen smaller than the full-width.*/
 
-/*start main*/
-main h1 {
+.mainheadline {
+    padding-bottom: 110px;
+    margin-bottom: 40px;
+}
+
+.mainheadline h1 {
     color: white;
     font-size: 40px; 
     text-align: center;
@@ -100,12 +111,16 @@ main h1 {
 .btn {
     margin-right: 25px; 
     margin-top: 10px; 
-    margin-bottom: 110px;
+    margin-bottom: 55px;
     padding: 15px 70px;
     border: 5px solid;
     border-radius: 5px;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+.button-cell {
+    text-align: center;
 }
 
 .button-attend {
@@ -118,6 +133,25 @@ main h1 {
     background-color: yellowgreen;
     border-color: yellowgreen;
     color: black;
+}
+
+/*start section for second part of text*/
+.description {
+    padding: 0px 50px; 
+    border-bottom: 10px deepskyblue solid;
+}
+
+.description h1 {
+    font-size: 40px;
+}
+
+.description h2 {
+    font-size: 20px;
+    color: gray;
+}
+
+.description p {
+    font-size: 20px; 
 }
 
 /*desktop?? yeah, this whole media thing is still waaaaay over my head.*/
@@ -149,8 +183,14 @@ main h1 {
         padding-left: 100px; 
     }
 
-    main h1 {
+    .mainheadline {
+    bottom-margin: 0px;
+    padding-bottom: 0px;
+    }
+
+    .mainheadline h1 {
         font-size: 70px;
+        bottom-margin: 20px;
     }
 
     .info {
@@ -170,6 +210,8 @@ main h1 {
     
     .button-laptop {
         display: block;
+        margin-bottom: 60px; 
+        padding-bottom: 35px; 
     }
 
     .button {
@@ -182,5 +224,24 @@ main h1 {
     color: lightgray;
     }
 
+    .description {
+        text-align: center;
+    }
 
+    .description h1 {
+    font-size: 50px;
+    }
+
+    .cell-break {
+        display: none;
+    }
+
+    .description h2 {
+        font-size: 30px; 
+    }
+
+    .description p {
+        padding: 20px 110px 40px 110px; 
+        font-size: 25px; 
+    }
 }
