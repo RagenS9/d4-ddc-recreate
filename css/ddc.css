@@ -14,10 +14,7 @@ div.container-fluid {
 .navbar-header {
     background-color: white;
     width: 100%;
-    padding-right: 5px;
-    padding-left: 5px; 
-    padding-top: 20px; 
-    padding-bottom: 10px; 
+    align-items: bottom;
 }
 
 .who {
@@ -25,6 +22,7 @@ div.container-fluid {
     padding-left: 30px; 
 }
 
+/*this came in all squishy, so I had to fix the height and the weight.*/
 .who img {
     width: 180px;
     height: 80px; 
@@ -43,46 +41,84 @@ div.container-fluid {
     color: white; 
 }
 
-/*tried just a. tried li. tried navlinks a tried navlinks > a--nothing working to turn these white.*/
-.nav navbar-nav ul > li >  sa {
+.navbar-default .navbar-nav>li>a {
     color: white;
-    text-size: 20px; 
+    text-size: 16px; 
+    text-transform: uppercase;
 }
 
-/*.navtext {
-    color: white; 
-}*/
-
-/*trying to make the font white. It didn't work. */
-/*.nav navbar-nav {
-    color: white; 
-}*/
-
-.facebooklogo > img {
-    width: 10px;
+img.facebooklogo {
+    width: 12px;
 }
 
-/*.twitterlogo > img {
-    width: 30px;
-}*/
+img.twitterlogo {
+    width: 25px; 
+}
 
+/*had to use this to get rid of the white strip of space between the header and main.*/
+nav.navbar.navbar-default {
+    margin: 0px; 
+    border: 0px; 
+}
+
+/*start main body*/
 main {
-    text-align: center;
-    background-image: url(../img/background.jpg);
+    background-position: center center;
+    background-image: url(../img/background2.jpg);
     background-size: cover;
+    text-align: center;
+    height: auto; 
 }
 
-.date {
+.details {
     color: deeppink;
+    padding-top: 30px;
+    align-content: center;
 }
 
-main .info {
+.details h2 {
+    font-size: 25px; 
+}
+
+/*played around with padding, margins, everything I could think of . . . HOW do you get those two details columns to sit side-by-side and be centered on the page like you have it? It will only look like yours when I make the screen smaller than the full-width.*/
+
+/*start main*/
+main h1 {
+    color: white;
+    font-size: 40px; 
+    text-align: center;
+}
+
+.info {
     display: none;
 }
 
-/*.button-row {
-    text-align: center; 
-}*/
+.button-laptop {
+    display: none;
+}
+
+.btn {
+    margin-right: 25px; 
+    margin-top: 10px; 
+    margin-bottom: 110px;
+    padding: 15px 70px;
+    border: 5px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.button-attend {
+    background-image: none;
+    border-color: darkgray;
+    color: black;
+}
+
+.button-register {
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+    color: black;
+}
 
 /*desktop?? yeah, this whole media thing is still waaaaay over my head.*/
 @media all and (min-width: 767px) {
@@ -91,7 +127,7 @@ main .info {
    }
 
    .what h3 {
-       font-size: 20px; 
+       font-size: 18px; 
    }
    
    .where {
@@ -100,7 +136,7 @@ main .info {
     }
 
     .where h3 {
-        font-size: 20px; 
+        font-size: 18px; 
     }
 
     .navbar-header {
@@ -113,11 +149,38 @@ main .info {
         padding-left: 100px; 
     }
 
-    main .info {
+    main h1 {
+        font-size: 70px;
+    }
+
+    .info {
+        display: block;
+        color: white;
+        margin-bottom: 20px; 
+    }
+
+    .info p {
+        font-size: 18px; 
+        color: lightgrey;
+    }
+    
+    .button-cell {
+        display: none;
+    }
+    
+    .button-laptop {
         display: block;
     }
 
+    .button {
+        padding: 15px 60px;
+    }
     
+    .button-attend laptop {
+    background-image: none;
+    border-color: darkgray;
+    color: lightgray;
+    }
 
 
 }
