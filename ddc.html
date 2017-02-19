@@ -8,57 +8,54 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/ddc.css" />
 </head>
+
 <body>
 
     <header>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header container">
                     <div class="row">
-                        <div class="panel-logo col-sm-4">
-                            <img src="./img/logo.png" alt="DDC logo" />
+                        <div class="col-sm-4 who">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <img class="navbar-brand" href="#" src="./img/logo.png" alt="DDC logo" />
                         </div>
 
-                        <div class="panel-even-name col-sm-4">
-                            <h3 class="panel-title">Digital Development<br/>Conference</h3>
+                        <div class="col-sm-4 what">
+                            <h3 class="panel-title"><strong>Digital Development<br/>Conference</strong></h3>
                         </div>
-
-                        <div class="panel-date col-sm-4">
-                            <h3 class="panel-title">April 2020<br/>Indianapolis Museum of Arts</h3>
+                        <div class="col-sm-4 where">
+                            <h3 class="panel-title"><strong>April 2020<br/>Indianapolis Museum of Arts</strong></h3>
                         </div>
                     </div>
+                </div>                    
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navlinks">
+                    <div class="collapse navbar-collapse" id="navbar-links">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Why attend?</a></li>
+                            <li><a href="#">Agenda</a></li>
+                            <li><a href="#">Speakers</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Sponsors</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><img class="facebooklogo" src="./img/icon-facebook.png" alt="facebook logo" /></a></li>
+                            <li><a href="#"><img class="twitterlogo" src="./img/icon-twitter.png" alt="twitter logo" /></a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
                 </div>
-            </div>
-        </div>
-
-        <div class="panel-body">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="column col-sm-9">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                </button>
-                                    <ul class="nav navbar-nav">
-                                        <li><a href="#" class="text-uppercase">Register</a></li>
-                                        <li><a href="#" class="text-uppercase">Why attend?</a></li>
-                                        <li><a href="#" class="text-uppercase">Agenda</a></li>
-                                        <li><a href="#" class="text-uppercase">Speakers</a></li>
-                                        <li><a href="#" class="text-uppercase">Locations</a></li>
-                                        <li><a href="#" class="text-uppercase">Sponsors</a></li>
-                                        <li><a href="#" class="text-uppercase">FAQ</a></li>
-                                    </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 ">
-                            <span class="icon-bar facebooklogo"><img src="./img/icon-facebook.png" alt="facebook logo" /></span>
-                            <span class="icon-bar twitterlogo"><img src="./img/icon-twitter.png" alt="twitter logo" /></span>
-                        </div>
-                    </div>
-                </div>  
-            </nav>
-        </div>
+            </div><!-- /.container-fluid -->
+        </nav>
     </header>
 
     <main>
@@ -114,3 +111,55 @@
 </footer>
 
 </html>
+
+<!--how Devin and I original set up the nav bar-->
+        <!--<div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="container">
+                    <div class="row">
+                        <div class="panel-logo col-sm-4">
+                            <img src="./img/logo.png" alt="DDC logo" />
+                        </div>
+
+                        <div class="panel-even-name col-sm-4">
+                            <h3 class="panel-title">Digital Development<br/>Conference</h3>
+                        </div>
+
+                        <div class="panel-date col-sm-4">
+                            <h3 class="panel-title">April 2020<br/>Indianapolis Museum of Arts</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        <!--<div class="panel-body">-->
+            <!--Devin's original setup, which looked good at full-size, but wasn't collapsing.-->
+        <!--<div class="panel-body">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="column col-sm-9">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                </button>
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#" class="text-uppercase">Register</a></li>
+                                        <li><a href="#" class="text-uppercase">Why attend?</a></li>
+                                        <li><a href="#" class="text-uppercase">Agenda</a></li>
+                                        <li><a href="#" class="text-uppercase">Speakers</a></li>
+                                        <li><a href="#" class="text-uppercase">Locations</a></li>
+                                        <li><a href="#" class="text-uppercase">Sponsors</a></li>
+                                        <li><a href="#" class="text-uppercase">FAQ</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                            <span class="icon-bar facebooklogo"><img src="./img/icon-facebook.png" alt="facebook logo" /></span>
+                            <span class="icon-bar twitterlogo"><img src="./img/icon-twitter.png" alt="twitter logo" /></span>
+                        </div>
+                    </div>
+                </div>  
+            </nav>
+        </div>-->

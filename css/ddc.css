@@ -6,29 +6,118 @@ img {
     width: 100%;
 }
 
-.panel {
-    margin-bottom: 0px;
+div.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-header {
     background-color: white;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px; 
+    padding-top: 20px; 
+    padding-bottom: 10px; 
 }
 
-.panel-logo {
-    width: 150px;
+.who {
+    text-align: right;
+    padding-left: 30px; 
 }
 
-
-
-.panel-body {
-    padding: 0px; 
+.who img {
+    width: 180px;
+    height: 80px; 
 }
+
+.what {
+    display: none;
+}
+
+.where {
+    display: none; 
+}
+
+.navlinks {
+    background-color: black;
+    color: white; 
+}
+
+/*tried just a. tried li. tried navlinks a tried navlinks > a--nothing working to turn these white.*/
+.nav navbar-nav ul > li >  sa {
+    color: white;
+    text-size: 20px; 
+}
+
+/*.navtext {
+    color: white; 
+}*/
+
+/*trying to make the font white. It didn't work. */
+/*.nav navbar-nav {
+    color: white; 
+}*/
 
 .facebooklogo > img {
-    width: 20px;
+    width: 10px;
 }
 
-.twitterlogo > img {
+/*.twitterlogo > img {
     width: 30px;
+}*/
+
+main {
+    text-align: center;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
 }
 
-.button-row {
+.date {
+    color: deeppink;
+}
+
+main .info {
+    display: none;
+}
+
+/*.button-row {
     text-align: center; 
+}*/
+
+/*desktop?? yeah, this whole media thing is still waaaaay over my head.*/
+@media all and (min-width: 767px) {
+   .what {
+       display: flex;
+   }
+
+   .what h3 {
+       font-size: 20px; 
+   }
+   
+   .where {
+       display: flex;
+        text-align: right; 
+    }
+
+    .where h3 {
+        font-size: 20px; 
+    }
+
+    .navbar-header {
+        padding-right: 100px;
+        padding-left: 100px; 
+    }
+
+    .navlinks {
+        padding-right: 100px;
+        padding-left: 100px; 
+    }
+
+    main .info {
+        display: block;
+    }
+
+    
+
+
 }
