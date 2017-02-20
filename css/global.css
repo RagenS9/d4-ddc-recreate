@@ -16,6 +16,10 @@ div.container-fluid {
     width: 100%;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: deeppink;
+}
+
 .who {
     text-align: right;
     padding-left: 30px; 
