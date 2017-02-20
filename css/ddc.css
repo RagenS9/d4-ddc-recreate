@@ -14,7 +14,6 @@ div.container-fluid {
 .navbar-header {
     background-color: white;
     width: 100%;
-    align-items: bottom;
 }
 
 .who {
@@ -80,7 +79,6 @@ main {
 .details {
     color: deeppink;
     padding-top: 30px;
-    align-content: right;
 }
 
 .details h2 {
@@ -190,13 +188,13 @@ main {
     }
 
     .mainheadline {
-    bottom-margin: 0px;
+    margin-bottom: 0px;
     padding-bottom: 0px;
     }
 
     .mainheadline h1 {
         font-size: 70px;
-        bottom-margin: 20px;
+        margin-bottom: 20px;
     }
 
     .info {
