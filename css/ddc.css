@@ -80,14 +80,20 @@ main {
 .details {
     color: deeppink;
     padding-top: 30px;
-    align-content: center;
+    align-content: right;
 }
 
 .details h2 {
     font-size: 25px; 
 }
 
-/*played around with padding, margins, everything I could think of . . . HOW do you get those two details columns to sit side-by-side and be centered on the page like you have it? It will only look like yours when I make the screen smaller than the full-width.*/
+.date {
+    padding-right: 0px;
+}
+
+.location {
+    padding-left: 0px;
+}
 
 .mainheadline {
     padding-bottom: 110px;
@@ -154,7 +160,7 @@ main {
     font-size: 20px; 
 }
 
-/*desktop?? yeah, this whole media thing is still waaaaay over my head.*/
+/*desktop?? laptop?? tablet?? yeah, this whole media thing is still waaaaay over my head.*/
 @media all and (min-width: 767px) {
    .what {
        display: flex;
